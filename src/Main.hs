@@ -1,5 +1,6 @@
 module Main (main) where
 
+import           App (initApp)
 import           Graphics.UI.Gtk
                     ( AttrOp(..)
                     , initGUI
@@ -17,6 +18,8 @@ import           Graphics.UI.Gtk
 main :: IO ()
 main = do
     initGUI
+
+    initApp
 
     window <- windowNew
 
